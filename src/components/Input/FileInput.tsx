@@ -92,7 +92,7 @@ const FileInputBase: ForwardRefRenderFunction<
       setCancelToken(source);
 
       const config = {
-        headers: { 'content-type': 'multipart/form-data' },
+        headers: { 'Content-Type': 'multipart/form-data' },
         onUploadProgress: (e: ProgressEvent) => {
           setProgress(Math.round((e.loaded * 100) / e.total));
         },
